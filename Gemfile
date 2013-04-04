@@ -25,3 +25,7 @@ gem "google_visualr", ">= 2.1.2"
 gem "jquery-datatables-rails", ">= 1.10.0"
 gem "bootstrap-sass", ">= 2.0.3"
 gem "simple_form"
+
+group :production do
+  gem 'pg'
+end
