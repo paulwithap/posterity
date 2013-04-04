@@ -52,8 +52,9 @@ class User < ActiveRecord::Base
   private
 
   def add_user_to_mailchimp
+    puts self.email
     unless self.email.include?('@example.com')
-      mailchimp = Hominid::API.new(ENV["MAILCHIMP_API_KEY"])
+      mailchimp = Hominid::API.new(ENV['MAILCHIMP_API_KEY'])
       list_id = mailchimp.find_list_id_by_name "visitors"
       info = { }
       result = mailchimp.list_subscribe(list_id, self.email, info, 'html', false, true, false, true)
@@ -63,7 +64,7 @@ class User < ActiveRecord::Base
   
   def remove_user_from_mailchimp
     unless self.email.include?('@example.com')
-      mailchimp = Hominid::API.new(ENV["MAILCHIMP_API_KEY"])
+      mailchimp = Hominid::API.new(ENV['MAILCHIMP_API_KEY'])
       list_id = mailchimp.find_list_id_by_name "visitors"
       result = mailchimp.list_unsubscribe(list_id, self.email, true, false, true)  
       Rails.logger.info("MAILCHIMP UNSUBSCRIBE: result #{result.inspect} for #{self.email}")
