@@ -28,4 +28,5 @@ gem "simple_form"
 
 group :production do
   gem 'pg'
+  gem 'thin'
 end
