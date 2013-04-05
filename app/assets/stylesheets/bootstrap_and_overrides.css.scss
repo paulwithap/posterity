@@ -2,9 +2,8 @@
 $iconSpritePath: asset-url('glyphicons-halflings.png', image);
 $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap";
-body { padding-top: 60px; }
-@import "bootstrap";
 @import "bootstrap-responsive";
+body { padding-top: 60px; background: #373535; }
 
 .content {
   background-color: #fff;
@@ -18,16 +17,6 @@ body { padding-top: 60px; }
   box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
-.content {
-}
-
-#welcome {
-  text-align: center;
-  
-  .hero-unit {
-    background: url(../assets/bg.png);    
-    padding: 40px;
-  }
   
   h1 {
     margin-bottom: 40px;
@@ -36,8 +25,8 @@ body { padding-top: 60px; }
   #request-invite {
     padding-top: 20px;
     
-    h1 {
-      color: #51A351;
+    h3 {
+      color: #fff;
       margin-bottom: 0;
     }
     
@@ -77,7 +66,6 @@ body { padding-top: 60px; }
     top: -5px;
     left: 5px;
   }
-}
 
 /*AJAX 'loading' indication on buttons */
 .btn.loading {
@@ -110,4 +98,31 @@ body { padding-top: 60px; }
     to {
        background-position: -50px 0;
     }
+}
+
+#sign-up-content {
+  color: white;
+  position: relative;
+  top: 50%;
+}
+
+#launch-logo {
+  text-align: center;
+}
+
+.smith-quote{
+  color: white;
+  text-align: center;
+}
+
+#invitation-button{
+  font-weight: bold;
+}
+
+.btn-custom { background-color: hsl(16, 90%, 36%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f35820", endColorstr="#ae3509"); background-image: -khtml-gradient(linear, left top, left bottom, from(#f35820), to(#ae3509)); background-image: -moz-linear-gradient(top, #f35820, #ae3509); background-image: -ms-linear-gradient(top, #f35820, #ae3509); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f35820), color-stop(100%, #ae3509)); background-image: -webkit-linear-gradient(top, #f35820, #ae3509); background-image: -o-linear-gradient(top, #f35820, #ae3509); background-image: linear-gradient(#f35820, #ae3509); border-color: #ae3509 #ae3509 hsl(16, 90%, 31.5%); color: #fff !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29); -webkit-font-smoothing: antialiased; }
+@media (min-width: 960px) {
+  #launch-logo {
+  position: relative;
+  right: -2em;
+}
 }

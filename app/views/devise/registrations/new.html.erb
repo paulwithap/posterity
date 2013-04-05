@@ -1,11 +1,20 @@
-<div class="span12">
+<div class="row">
+	<div class="span6" id="launch-logo">
 
-	<h1>Something <strong>AWESOME</strong> is coming soon.</h1>
+		<%= image_tag "posterity.png" %>
 
-	<h2>Be the first to know...</h2>
-
-	<div id="request-invite" class="form-inline">
-		<%= render 'email_capture' %>
 	</div>
 
+	<div class="span6" id="sign-up-content">
+
+		<h1>Wear something good.</h1>
+
+		<div id="request-invite" class="form-inline">
+			<%= render 'email_capture' %>
+		</div>
+
+	</div>
+</div>
+<div id="smith-quote">
+	<h3><em>"A man doesn't plant a tree for himself. He plants it for posterity."</em><br>    - Alexander Smith</h3>
 </div>
