@@ -110,10 +110,10 @@ body { padding-top: 60px; background: #373535; }
   text-align: center;
 }
 
-.smith-quote{
-  color: white;
-  text-align: center;
-}
+// #smith-quote{
+//   color: #d4d2d2;
+//   text-align: center;
+// }
 
 #invitation-button{
   font-weight: bold;
@@ -125,4 +125,7 @@ body { padding-top: 60px; background: #373535; }
   position: relative;
   right: -2em;
 }
+  #sign-up-content {
+    padding-top: 130px;
+  }
 }
