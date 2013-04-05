@@ -15,11 +15,12 @@
         try{Typekit.load();}catch(e){}
     = yield(:head)
   %body
-    - if user_signed_in? && current_user.has_role? :admin
-      %header.navbar.navbar-fixed-top
-        %nav.navbar-inner
-          .container
-            = render 'layouts/navigation'
+    - if user_signed_in?
+      - if current_user.has_role? :admin
+        %header.navbar.navbar-fixed-top
+          %nav.navbar-inner
+            .container
+              = render 'layouts/navigation'
     #main{:role => "main"}
       .container
         .row
