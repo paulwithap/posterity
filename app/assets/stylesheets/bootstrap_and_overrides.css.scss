@@ -16,11 +16,6 @@ body { padding-top: 60px; background: #373535; }
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
   box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
-
-  
-  h1 {
-    margin-bottom: 40px;
-  }
   
   #request-invite {
     padding-top: 20px;
@@ -28,6 +23,7 @@ body { padding-top: 60px; background: #373535; }
     h3 {
       color: #fff;
       margin-bottom: 0;
+      letter-spacing: 0.05em;
     }
     
     .alert-error {
@@ -102,8 +98,10 @@ body { padding-top: 60px; background: #373535; }
 
 #sign-up-content {
   color: white;
-  position: relative;
-  top: 50%;
+  h1 {
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+  }
 }
 
 #launch-logo {
@@ -115,7 +113,7 @@ body { padding-top: 60px; background: #373535; }
 //   text-align: center;
 // }
 
-#invitation-button{
+#invitation_button{
   font-weight: bold;
 }
 
